@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaGoldBot - Trading i Avancuar & Investime të Sigurta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">EaGoldBot është duke u ngarkuar...</div>
+    </div>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        Mesazhi u dërgua me sukses!
+    </div>
+
+    <!-- Faqja Kryesore -->
+    <div class="overlay">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1>EaGoldBot</h1>
+                <div class="tagline">Trading i Avancuar & Investime të Sigurta</div>
+                
+                <p>Platforma jonë kombinon teknologjinë më të fundit me ekspertizën e industrisë për të ofruar rezultate të shkëlqyera në tregjet financiare.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">Saktësi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Monitorim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Siguri</span>
+                    </div>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Trading Automatik</h3>
+                        <p>Sistemi i avancuar i bot-eve për tregje të përparuara</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analizë në Kohë Reale</h3>
+                        <p>Të dhëna dhe statistika të përditësuara çdo sekondë</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Siguri e Plotë</h3>
+                        <p>Mbrojtje e avancuar e të dhënave tuaja</p>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="button" onclick="openStartModal()">Fillo Tani</button>
+                    <button class="button secondary" onclick="openAboutModal()">Mëso Më Shumë</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal për "Mëso Më Shumë" -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAboutModal()">&times;</span>
+            
+            <h2>Rreth EaGoldBot</h2>
+            
+            <div class="robot-info">
+                <h3>🤖 Çfarë është EaGoldBot?</h3>
+                <p>EaGoldBot është një sistem i avancuar i tradingut automatik i dizajnuar për të maksimizuar fitimet në tregjet financiare. Robot-i ynë përdor algoritme të sofistikuara të inteligjencës artificiale për të analizuar trendet e tregut dhe për të ekzekutuar tregje me saktësi të lartë.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-brain"></i>
+                    <h4>Inteligjencë Artificiale</h4>
+                    <p>Përdor algoritme të avancuara ML për parashikime të sakta</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Shpejtësi Ekstreme</h4>
+                    <p>Ekzekutim i tregjeve në milisekonda</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Analizë e Thellë</h4>
+                    <p>Monitorim 24/7 i të gjitha tregjeve financiare</p>
+                </div>
+            </div>
+
+            <div class="tech-specs">
+                <h3>🛠 Specifikimet Teknike</h3>
+                <div class="spec-item">
+                    <span>Platforma:</span>
+                    <span>MetaTrader 4/5, cTrader</span>
+                </div>
+                <div class="spec-item">
+                    <span>Kohëzgjatja e Analizës:</span>
+                    <span>0.5 sekonda</span>
+                </div>
+                <div class="spec-item">
+                    <span>Saktësia e Parashikimit:</span>
+                    <span>99.8%</span>
+                </div>
+                <div class="spec-item">
+                    <span>Mbështetje Valutash:</span>
+                    <span>Të gjitha çiftet kryesore</span>
+                </div>
+                <div class="spec-item">
+                    <span>Risk Management:</span>
+                    <span>Auto-adjust sipas tregut</span>
+                </div>
+            </div>
+
+            <div class="robot-info">
+                <h3>💰 Pse të Zgjidhni EaGoldBot?</h3>
+                <p>• <strong>Fitime të Qëndrueshme:</strong> Mesatarisht 15-25% në muaj</p>
+                <p>• <strong>Zero Eksperiencë e Kërkuar:</strong> Funksionon plotësisht automatik</p>
+                <p>• <strong>Mbrojtje e Plotë:</strong> Stop-loss automatik dhe menaxhim risku</p>
+                <p>• <strong>Asistencë 24/7:</strong> Ekipi ynë është gjithmonë në dispozicion</p>
+                <p>• <strong>Transparencë e Plotë:</strong> Ju shihni çdo tregje në kohë reale</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="button" onclick="closeAboutModal()">Kthehu në Faqen Kryesore</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal për "Fillo Tani" -->
+    <div id="startModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeStartModal()">&times;</span>
+            
+            <h2>🛍️ Blerja e EaGoldBot</h2>
+            
+            <div class="contact-info">
+                <h3>📞 Kontaktet Tona</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value">eagoldbot.support@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Telegram:</span>
+                        <span class="contact-value">@EaGoldBot_Support</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Instagram:</span>
+                        <span class="contact-value">@EaGoldBot_Official</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">WhatsApp:</span>
+                        <span class="contact-value">+355 XX XXX XXXX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <h3>💳 Metodat e Pagesës</h3>
+                
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                        <span>PayPal</span>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <span>Kartë Krediti</span>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span>Transfertë Bankare</span>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fab fa-bitcoin"></i>
+                        </div>
+                        <span>Bitcoin</span>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fab fa-ethereum"></i>
+                        </div>
+                        <span>Ethereum</span>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <span>Western Union</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-info">
+                <h3>💰 Paketat dhe Çmimet</h3>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Paketa Bazë</h4>
+                        <p><strong>99€</strong></p>
+                        <p>• 1 Muaj akses</p>
+                        <p>• Mbështetje 24/7</p>
+                        <p>• Përditësime falas</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-crown"></i>
+                        <h4>Paketa Premium</h4>
+                        <p><strong>249€</strong></p>
+                        <p>• 3 Muaj akses</p>
+                        <p>• Mbështetje VIP</p>
+                        <p>• Strategji të avancuara</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-gem"></i>
+                        <h4>Paketa VIP</h4>
+                        <p><strong>799€</strong></p>
+                        <p>• 1 Vit akses</p>
+                        <p>• Asistencë personale</p>
+                        <p>• Të gjitha veçoritë</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>📝 Kontaktoni Ne</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Emri i Plotë:</label>
+                        <input type="text" id="name" name="name" required placeholder="Shkruani emrin tuaj të plotë">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="shkruani@emailin.tuaj">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon (opsional):</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+355 XX XXX XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Paketa e Interesuar:</label>
+                        <select id="package" name="package">
+                            <option value="basic">Paketa Bazë - 99€</option>
+                            <option value="premium">Paketa Premium - 249€</option>
+                            <option value="vip">Paketa VIP - 799€</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mesazhi (opsional):</label>
+                        <textarea id="message" name="message" placeholder="Shkruani mesazhin tuaj këtu..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Dërgo Kerkesën</button>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="button secondary" onclick="closeStartModal()">Kthehu në Faqen Kryesore</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
